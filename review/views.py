@@ -31,6 +31,14 @@ class ReviewViewMixin(object):
         return login_required(super(ReviewViewMixin, self).dispatch)(
             request, *args, **kwargs)
 
+
+
+
+
+
+
+
+
     def get_form_class(self):
         if getattr(settings, 'REVIEW_CUSTOM_FORM', False):
             app_label, class_name = settings.REVIEW_CUSTOM_FORM.rsplit('.', 1)
