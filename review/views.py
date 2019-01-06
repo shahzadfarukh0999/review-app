@@ -60,6 +60,13 @@ class ReviewViewMixin(object):
 
 
 
+
+
+
+
+
+
+
 class ReviewUpdateMixin(object):
     """Mixin to provide update functions for a ``Review`` instance."""
     def dispatch(self, request, *args, **kwargs):
