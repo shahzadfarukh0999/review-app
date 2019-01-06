@@ -70,6 +70,15 @@ class ReviewViewMixin(object):
             kwargs.update({'user': self.request.user})
         return kwargs
 
+
+
+
+
+
+
+
+
+
     def get_success_url(self):
         success_url = getattr(settings, 'REVIEW_UPDATE_SUCCESS_URL', None)
         if success_url is not None:
