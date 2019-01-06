@@ -1,3 +1,6 @@
+
+
+
 """Views for the review app."""
 import importlib
 
@@ -21,11 +24,28 @@ from django.contrib.auth.decorators import login_required
 
 
 from django.contrib.contenttypes.models import ContentType
+
+
+
+
+
+
+
 from django.urls import reverse
 from django.db.models import ObjectDoesNotExist
 from django.http import Http404, HttpResponseRedirect
+
+
+
+
+
+
 from django.utils import timezone
 from django.views.generic import CreateView, DeleteView, DetailView, UpdateView
+
+
+
+
 
 from .forms import ReviewForm
 from .models import Review
