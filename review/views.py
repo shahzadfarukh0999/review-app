@@ -1,8 +1,25 @@
 """Views for the review app."""
 import importlib
 
+
+
+
+
+
+
+
+
+
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+
+
+
+
+
+
+
+
 from django.contrib.contenttypes.models import ContentType
 from django.urls import reverse
 from django.db.models import ObjectDoesNotExist
