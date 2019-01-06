@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Reviews" %}{% endblock %}
+
+{% block main %}
+    <br><br><br>
+    <div class="container">
+        <h1>{% trans "Reviews" %}</h1>
+        <ul>
+            {% for review in object_list %}
+                <li>
+                    <a href="{% url "review_detail" pk=review.pk %}">{{ review }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

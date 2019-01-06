@@ -1,0 +1,7 @@
+django
+django-parler
+djangorestframework
+django-parler-rest
+django-user-media
+Pillow
+django-libs
